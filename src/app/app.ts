@@ -1,21 +1,17 @@
 import { Component, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
+import { Blindeos } from "./blindeos/blindeos";
+import { Bienvenida } from "./bienvenida/bienvenida";
+import { Error } from "./error/error";
+import { Login } from "./login/login";
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule],
+  imports: [RouterOutlet, Blindeos, Bienvenida, Error, Login, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  nombre: string = "Bruno";
-  contador = 0;
 
-  link = "https://www.google.com";
-  estilo = "background-color: lightblue;";
-
-  contadorSumar() {
-    this.contador++;
-  }
 }

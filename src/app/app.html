@@ -1,22 +1,11 @@
-<router-outlet />
+<h1>Clase 01</h1>
+<button routerLink="/bienvenida">Bienvenida</button>
+<button>Blindeos</button>
+<button>Error</button>
 
-<h1>Clase 01 - Blindeos</h1>
+<router-outlet /> <!-- Esto nos permite usar las rutas de app.routes.ts -->
 
-<!-- Texto -->
-<p>
-  {{ nombre }}
-</p>
-<p>
-  {{ contador }}
-</p>
-
-<!-- Atributos -->
-<a [href]="link" target="_blank">Google</a>
-
-<div [style]="estilo"></div>
-
-<!-- Eventos -->
-<button (click)="contadorSumar()">sumar</button>
-
-<!-- Doble -->
-<input [(ngModel)]="nombre" />
+<!-- <app-bienvenida></app-bienvenida>
+<app-error></app-error>
+<app-blindeos></app-blindeos>
+<app-login></app-login> -->
