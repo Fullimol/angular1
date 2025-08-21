@@ -5,5 +5,3 @@ export const routes: Routes = [{
     path: 'bienvenida',
     component: Bienvenida
 }];
-
-// /tutoriales -> Tutoriales
