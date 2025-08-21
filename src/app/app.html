@@ -1,16 +1,22 @@
 <router-outlet />
 
-<h1>Clase 01</h1>
+<h1>Clase 01 - Blindeos</h1>
 
-<!-- textp -->
+<!-- Texto -->
 <p>
   {{ nombre }}
 </p>
+<p>
+  {{ contador }}
+</p>
 
-<!-- atributos -->
- <a [href]="link" target="_blank">Google</a>
+<!-- Atributos -->
+<a [href]="link" target="_blank">Google</a>
 
- <div [style]="estilo"></div>
+<div [style]="estilo"></div>
 
- <!-- eventos -->
-  <button (click)="contadorSumar()">sumar</button>
+<!-- Eventos -->
+<button (click)="contadorSumar()">sumar</button>
+
+<!-- Doble -->
+<input [(ngModel)]="nombre" />
